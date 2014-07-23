@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2013 for Web
+VisualStudioVersion = 12.0.30110.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NLP-Processing", "NLP-Processing\NLP-Processing.csproj", "{7A0055F1-EAE2-450A-9DE6-6B7D5CF49098}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NLP-Processing.Tests", "NLP-Processing.Tests\NLP-Processing.Tests.csproj", "{BD109B86-6A8C-4C07-B3A0-78851E359BF2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7A0055F1-EAE2-450A-9DE6-6B7D5CF49098}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A0055F1-EAE2-450A-9DE6-6B7D5CF49098}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A0055F1-EAE2-450A-9DE6-6B7D5CF49098}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A0055F1-EAE2-450A-9DE6-6B7D5CF49098}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD109B86-6A8C-4C07-B3A0-78851E359BF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD109B86-6A8C-4C07-B3A0-78851E359BF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD109B86-6A8C-4C07-B3A0-78851E359BF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD109B86-6A8C-4C07-B3A0-78851E359BF2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
