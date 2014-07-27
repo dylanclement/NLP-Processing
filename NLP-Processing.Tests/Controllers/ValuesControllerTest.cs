@@ -14,13 +14,14 @@ namespace NLP_Processing.Tests.Controllers
     public class ValuesControllerTest
     {
         [TestMethod]
-        public void Get()
+        public void GetList()
         {
             // Arrange
-            ValuesController controller = new ValuesController();
+            TokenController controller = new TokenController();
 
             // Act
-            IEnumerable<string> result = controller.Get();
+            var parms = new string[] { "A", "cat", "is", "an", "animal" };
+            var result = controller.Get(parms);
 
             // Assert
             Assert.IsNotNull(result);
@@ -30,52 +31,16 @@ namespace NLP_Processing.Tests.Controllers
         }
 
         [TestMethod]
-        public void GetById()
+        public void Get()
         {
             // Arrange
-            ValuesController controller = new ValuesController();
+            TokenController controller = new TokenController();
 
             // Act
-            string result = controller.Get(5);
+            string result = controller.Get("dog");
 
             // Assert
             Assert.AreEqual("value", result);
-        }
-
-        [TestMethod]
-        public void Post()
-        {
-            // Arrange
-            ValuesController controller = new ValuesController();
-
-            // Act
-            controller.Post("value");
-
-            // Assert
-        }
-
-        [TestMethod]
-        public void Put()
-        {
-            // Arrange
-            ValuesController controller = new ValuesController();
-
-            // Act
-            controller.Put(5, "value");
-
-            // Assert
-        }
-
-        [TestMethod]
-        public void Delete()
-        {
-            // Arrange
-            ValuesController controller = new ValuesController();
-
-            // Act
-            controller.Delete(5);
-
-            // Assert
         }
     }
 }
