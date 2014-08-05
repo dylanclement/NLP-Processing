@@ -11,7 +11,7 @@ using NLP_Processing.Controllers;
 namespace NLP_Processing.Tests.Controllers
 {
     [TestClass]
-    public class ValuesControllerTest
+    public class TokenControllerTest
     {
         [TestMethod]
         public void GetList()
@@ -20,7 +20,7 @@ namespace NLP_Processing.Tests.Controllers
             TokenController controller = new TokenController();
 
             // Act
-            var parms = new string[] { "A", "cat", "is", "an", "animal" };
+            var parms = "A cat is an animal";
             var result = controller.Get(parms);
 
             // Assert

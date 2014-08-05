@@ -11,18 +11,8 @@ namespace NLP_Processing.Controllers
 {
     public class TokenController : ApiController
     {
-        // GET api/values
-        public string Get(string[] sentence)
-        {
-            var results = "";
-            foreach (var s in sentence)
-            {
-                results += Get(s) + ' ';
-            }
-            return results;
-        }
 
-        // GET api/values/5
+        // GET api/Token
         public string Get(string word)
         {
             var tagger = new MaxentTagger(@"C:\Projects\NLP-Processing\stanford-postagger-full-2014-06-16\models\wsj-0-18-bidirectional-nodistsim.tagger");
