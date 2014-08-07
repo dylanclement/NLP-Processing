@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
     @Styles.Render("~/Content/css")
+    <link href="/Content/site.css" rel="stylesheet">
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
@@ -28,8 +29,8 @@
     </div>
     <div class="container body-content">
         @RenderBody()
-        <hr />
         <footer>
+            <hr />
             <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
         </footer>
     </div>
